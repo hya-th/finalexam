@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #01050d;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.all {
+  position: absolute;
+  left: 100px;
+  overflow: hidden;
+}
+.text {
+  animation-name: draw01;
+  animation-delay: 0.2s;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes draw01 {
+  0% {
+    stroke-dasharray: 4500;
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dasharray: 4400;
+    stroke-dashoffset: 0;
+  }
+}
+.line {
+  animation-name: draw02;
+  animation-delay: 0.4s;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes draw02 {
+  0% {
+    stroke-dasharray: 4000;
+    stroke-dashoffset: 2000;
+  }
+  100% {
+    stroke-dasharray: 3900;
+    stroke-dashoffset: 0;
+  }
+}
+.circle {
+  animation-name: draw03;
+  animation-delay: 0.2s;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-direction: inherit;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes draw03 {
+  0% {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dasharray: 3900;
+    stroke-dashoffset: 0;
+  }
+}
+.circle2 {
+  animation-name: draw04;
+  animation-delay: 0.2s;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes draw04 {
+  0% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+  }
+}
+.con {
+  position: absolute;
+  opacity: 0;
+  top: 150px;
+  left: 365px;
+  margin: 20px;
+
+  transition: none;
+}
+
+.con:hover {
+  animation: fadeIn 0.8s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+.tw {
+  animation-name: twinkle 2s infinite ease-in-out;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.textbox.dancing {
+  position: absolute;
+}
+.fade {
+  position: absolute;
+  opacity: 0;
+  top: 600px;
+  left: 0px;
+
+  transition: none;
+  animation-name: in;
+  animation-delay: 2s;
+}
+.fade:hover {
+  opacity: 1;
+  transition: 2s ease-in-out;
+}

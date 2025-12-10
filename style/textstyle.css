@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap");
+
+.class {
+  font-size: 4px;
+}
+
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.textbox {
+  color: #212121;
+
+  font-size: 32px;
+  font-weight: normal;
+
+  line-height: 140%;
+  word-spacing: -2.5%;
+
+  text-indent: 0px;
+
+  margin-bottom: 10px;
+}
