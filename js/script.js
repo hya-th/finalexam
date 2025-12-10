@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const starCount = 500;
+  const starCount = 100;
 
   for (let i = 0; i < starCount; i++) {
     const $star = $("<div class='star'></div>");
@@ -7,7 +7,7 @@ $(document).ready(function () {
     const top = Math.random() * 100 + "%";
     const left = Math.random() * 100 + "%";
 
-    const size = Math.random() * 2 + 3 + "px";
+    const size = Math.random() * 1 + 3 + "px";
 
     const delay = (Math.random() * 2).toFixed(2) + "s";
 
@@ -22,3 +22,4 @@ $(document).ready(function () {
     $(".stars-container").append($star);
   }
 });
+
